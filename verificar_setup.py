@@ -52,9 +52,9 @@ def verificar_setup():
     import subprocess
     try:
         git_user = subprocess.check_output(['git', 'config', 'user.name'],
-                                         stderr=subprocess.DEVNULL).decode().strip()
+                                        stderr=subprocess.DEVNULL).decode().strip()
         git_email = subprocess.check_output(['git', 'config', 'user.email'],
-                                          stderr=subprocess.DEVNULL).decode().strip()
+                                        stderr=subprocess.DEVNULL).decode().strip()
         print(f"✅ Git configurado - Usuario: {git_user}")
         print(f"✅ Git configurado - Email: {git_email}")
     except:
